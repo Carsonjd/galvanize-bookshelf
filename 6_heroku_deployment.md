@@ -8,7 +8,7 @@ Refer to the steps below. I also made a little video going through the process:
 https://vimeo.com/207720558
 
 ## Pre-deployment
-
+bash -c 'echo "JWT_KEY="$(openssl rand -base64 64)' > .env
 First, complete the following pre-deployment steps.
 
 1. Create a Heroku app called `USERNAME-galvanize-bookshelf` where `USERNAME` is your GitHub username in lowercase form.
